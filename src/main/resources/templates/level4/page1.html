@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+level4-page1<br/>
+<div shiro:hasPermission="level4:add">
+    <a th:href="@{/level4/add}">添加</a>
+</div>
+<div shiro:hasPermission="level4:update">
+    <a th:href="@{/level4/update}">修改</a>
+</div>
+</body>
+</html>
